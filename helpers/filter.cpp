@@ -10,7 +10,7 @@
  * */
 
 template <typename T, typename lambda>
-std::vector<T> filter(std::vector<T> array, lambda func){
+std::vector<T> filter(const std::vector<T>& array, const lambda& func){
 
   std::vector<T> newArray;
 

@@ -10,7 +10,7 @@
  * */
 
 template <typename T, typename lambda>
-void forEach(T &array, lambda func){
+void forEach(T &array, const lambda& func){
   for(auto &element : array){
     func(element);
   }
