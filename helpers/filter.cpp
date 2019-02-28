@@ -3,7 +3,7 @@
 
 /**
  * Loops through an array and passes each element of the array as argument to a function,
- * if the function returns true, it adds the element to the array that will be returned;
+ * if the function returns true, adds the element to the array that will be returned;
  * Works for std::vector
  * @param (array, function)
  * @return std::vector
