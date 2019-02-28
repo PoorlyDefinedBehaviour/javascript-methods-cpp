@@ -28,7 +28,6 @@ int main(){
     return element * element;
   });
 
-
   for(auto element : mappedArray){
     std::cout << element << std::endl;
   }
