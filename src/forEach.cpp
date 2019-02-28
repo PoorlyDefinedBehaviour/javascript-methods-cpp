@@ -3,7 +3,7 @@
 #include <vector>
 
 /**
- * Loops through an array.
+ * Loops through an array and passes each element of the array as argument to a function
  * Works for std::array and std::vector
  * @param (array, function)
  * @return void
