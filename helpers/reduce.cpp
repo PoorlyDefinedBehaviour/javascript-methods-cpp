@@ -1,7 +1,6 @@
 #include <iostream>
 #include <array>
 #include <vector>
-#include <typeinfo>
 
 /**
  * Loops through an array and passes each element of the array as argument to a function,
