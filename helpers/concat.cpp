@@ -9,9 +9,9 @@
  * */
 
 template <typename T>
-T concat(const T &array1, const T &array2)
+std::vector<T> concat(const std::vector<T> &array1, const std::vector<T> &array2)
 {
-  T newArray = array1;
+  std::vector<T> newArray = array1;
 
   for (auto element : array2)
   {
