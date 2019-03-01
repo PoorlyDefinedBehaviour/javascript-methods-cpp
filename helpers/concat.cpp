@@ -2,7 +2,7 @@
 #include <vector>
 
 /**
- * adds to arrays into a single new array and returns it
+ * adds two arrays into a single new array and returns it
  * Works for std::vector
  * @param (array1, array2)
  * @return std::vector
