@@ -10,20 +10,23 @@
  * */
 
 template <typename T, typename lambda>
-void forEach(T &array, const lambda& func){
-  for(auto &element : array){
+void forEach(T &array, const lambda &func)
+{
+  for (auto &element : array)
+  {
     func(element);
   }
 }
 
-int main() {
-  std::array<int, 5> array = {1,2,3,4,5};
-  forEach(array, [](auto &element){
+int main()
+{
+  std::array<int, 5> array = {1, 2, 3, 4, 5};
+  forEach(array, [](auto element) {
     std::cout << element << std::endl;
   });
 
-  std::vector<int> array2 = {5,4,3,2,1};
-  forEach(array2, [](auto element){
+  std::vector<int> array2 = {5, 4, 3, 2, 1};
+  forEach(array2, [](auto element) {
     std::cout << element << std::endl;
   });
 }

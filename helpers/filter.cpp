@@ -10,12 +10,15 @@
  * */
 
 template <typename T, typename lambda>
-std::vector<T> filter(const std::vector<T>& array, const lambda& func){
+std::vector<T> filter(const std::vector<T> &array, const lambda &func)
+{
 
   std::vector<T> newArray;
 
-  for(auto element : array){
-    if(func(element)){
+  for (auto &element : array)
+  {
+    if (func(element))
+    {
       newArray.push_back(element);
     }
   }
@@ -23,13 +26,15 @@ std::vector<T> filter(const std::vector<T>& array, const lambda& func){
   return newArray;
 }
 
-int main() {
+int main()
+{
   std::vector<int> array = {1, 2, 3, 4, 5};
-  std::vector<int> evenNumbers = filter(array, [](auto element){
+  std::vector<int> evenNumbers = filter(array, [](auto element) {
     return element % 2 == 0;
   });
 
-  for(auto element : evenNumbers){
+  for (auto element : evenNumbers)
+  {
     std::cout << element << std::endl;
   }
 }

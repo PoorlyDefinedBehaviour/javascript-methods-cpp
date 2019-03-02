@@ -11,11 +11,13 @@
  * */
 
 template <typename T, typename lambda>
-auto reduce(const T& array, const lambda& func){
-  
+auto reduce(const T &array, const lambda &func)
+{
+
   auto result = array[0] - array[0];
 
-  for(int i=0, n = array.size(); i < n; i++){
+  for (int i = 0, n = array.size(); i < n; i++)
+  {
     std::cout << result << " ";
     result = func(result, array[i]);
   }
@@ -23,10 +25,11 @@ auto reduce(const T& array, const lambda& func){
   return result;
 }
 
-int main() {
+int main()
+{
   std::vector<int> array = {1, 2, 3, 4, 5};
 
-  std::cout << reduce(array, [](auto accum, auto element){
+  std::cout << reduce(array, [](auto accum, auto element) {
     return accum + element;
   });
 }

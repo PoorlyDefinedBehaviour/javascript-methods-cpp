@@ -13,7 +13,7 @@
 template <typename T, typename TYPE>
 bool includes(const T &array, TYPE value)
 {
-  for (auto element : array)
+  for (auto &element : array)
   {
     if (element == value)
     {

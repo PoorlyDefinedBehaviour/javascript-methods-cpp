@@ -13,7 +13,7 @@ std::vector<T> concat(const std::vector<T> &array1, const std::vector<T> &array2
 {
   std::vector<T> newArray = array1;
 
-  for (auto element : array2)
+  for (auto &element : array2)
   {
     newArray.push_back(element);
   }
@@ -29,6 +29,6 @@ int main()
 
   for (auto element : array3)
   {
-    std::cout << element << ", ";
+    std::cout << element << " ";
   }
 }

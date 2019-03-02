@@ -14,7 +14,7 @@
 template <typename T, typename lambda>
 bool every(const T &array, const lambda &func)
 {
-  for (auto element : array)
+  for (auto &element : array)
   {
     if (!func(element))
     {

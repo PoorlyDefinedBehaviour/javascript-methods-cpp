@@ -15,7 +15,7 @@ std::string toString(const T &array)
 {
   std::string resultString = "";
 
-  for (auto element : array)
+  for (auto &element : array)
   {
     resultString += ((char)element + '0');
   }
