@@ -13,7 +13,7 @@ std::vector<T> map(const std::vector<T> &array, const lambda &func)
 {
   std::vector<T> newArray;
 
-  for (auto &element : array)
+  for (const auto &element : array)
   {
     newArray.push_back(func(element));
   }
@@ -28,7 +28,7 @@ int main()
     return element * element;
   });
 
-  for (auto element : mappedArray)
+  for (const auto &element : mappedArray)
   {
     std::cout << element << std::endl;
   }
