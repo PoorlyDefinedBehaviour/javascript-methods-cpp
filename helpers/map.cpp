@@ -24,7 +24,7 @@ int main()
 {
   std::vector<int> array = {1, 2, 3, 4, 5};
 
-  std::vector<int> mappedArray = map(array, [](auto element) {
+  std::vector<int> mappedArray = map(array, [](const auto &element) {
     return element * element;
   });
 

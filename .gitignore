@@ -1,6 +1,7 @@
 .vscode/
 bin/
 include/
+main.exe
 lib/
 build.bat
 src/
