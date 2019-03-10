@@ -2,33 +2,30 @@
 #include <vector>
 
 /**
- * reverses an array passsed in by reference
+ * Takes an array and returns it's elements reversed;
  * Works for std::vector
- * @param (array)
- * @return void
+ * @param (std::vector)
+ * @return std::vector
  * */
-
 template <typename T>
-void reverse(T &array)
+std::vector<T> reverse(const std::vector<T> &array)
 {
-  T tempArray;
+  std::vector<T> newArray;
+
   for (int i = array.size() - 1; i > -1; i--)
   {
-    tempArray.push_back(array[i]);
+    newArray.push_back(array[i]);
   }
-
-  for (int i = 0, n = tempArray.size(); i < n; i++)
-  {
-    array[i] = tempArray[i];
-  }
+  return newArray;
 }
 
 int main()
 {
-  std::vector<int> vector = {1, 2, 3, 4, 5};
-  reverse(vector);
-  for (auto element : vector)
+  std::vector<int> array = {1, 2, 3, 4, 5};
+
+  std::vector<int> reversedArray = reverse(array);
+  for (const auto &number : reversedArray)
   {
-    std::cout << element << std::endl;
+    std::cout << number << " ";
   }
 }

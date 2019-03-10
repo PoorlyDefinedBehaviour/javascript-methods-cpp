@@ -7,7 +7,6 @@
  * @param (array1, array2)
  * @return std::vector
  * */
-
 template <typename T>
 std::vector<T> concat(const std::vector<T> &array1, const std::vector<T> &array2)
 {
@@ -27,7 +26,7 @@ int main()
   std::vector<int> array2 = {6, 7, 8, 9, 10};
   std::vector<int> array3 = concat(array1, array2);
 
-  for (auto element : array3)
+  for (const auto &element : array3)
   {
     std::cout << element << " ";
   }

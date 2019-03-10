@@ -2,13 +2,12 @@
 #include <vector>
 
 /**
- * Loops through an array and passes each element of the array as argument to a function
- * at the end, returns a new array;
+ * Loops through an array and passes each element of the array as argument to a function, 
+ * at the end, returns a new array with the mapped elements
  * Works for std::vector
  * @param (array, function)
  * @return std::vector
  * */
-
 template <typename T, typename lambda>
 std::vector<T> map(const std::vector<T> &array, const lambda &func)
 {
@@ -18,7 +17,6 @@ std::vector<T> map(const std::vector<T> &array, const lambda &func)
   {
     newArray.push_back(func(element));
   }
-
   return newArray;
 }
 

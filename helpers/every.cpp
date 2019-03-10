@@ -3,14 +3,11 @@
 #include <vector>
 
 /**
- * Loops through an array and passes each element of the array as argument to a function,
- * if the function returns true for every element in the array, returns true. Otherwise 
- * returns false.
+ * Tests if every element of an array passes a certain test
  * Works for std::array and std::vector
  * @param (array, function)
  * @return boolean
  * */
-
 template <typename T, typename lambda>
 bool every(const T &array, const lambda &func)
 {
@@ -21,7 +18,6 @@ bool every(const T &array, const lambda &func)
       return false;
     }
   }
-
   return true;
 }
 

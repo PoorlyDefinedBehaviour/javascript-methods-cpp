@@ -9,17 +9,15 @@
  * @param (array)
  * @return std::string
  * */
-
 template <typename T>
 std::string toString(const T &array)
 {
   std::string resultString = "";
 
-  for (auto &element : array)
+  for (const auto &element : array)
   {
     resultString += ((char)element + '0');
   }
-
   return resultString;
 }
 

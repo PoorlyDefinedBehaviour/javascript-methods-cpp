@@ -13,15 +13,12 @@
 template <typename T, typename lambda>
 auto reduce(const T &array, const lambda &func)
 {
-
   auto result = array[0] - array[0];
 
-  for (int i = 0, n = array.size(); i < n; i++)
+  for (const auto &element : array)
   {
-    std::cout << result << " ";
-    result = func(result, array[i]);
+    result = func(result, element);
   }
-
   return result;
 }
 

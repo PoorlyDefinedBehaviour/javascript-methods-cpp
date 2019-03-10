@@ -3,15 +3,14 @@
 #include <vector>
 
 /**
- * Loops through an array and searches for the provided value, if found returns true,
- * otherwise returns false;
+ * Loops through an array and searches for the provided value, 
+ * if found returns true, otherwise returns false;
  * Works for std::array and std::vector
  * @param (array, value)
  * @return boolean
  * */
-
 template <typename T, typename TYPE>
-bool includes(const T &array, TYPE value)
+bool includes(const T &array, const TYPE &value)
 {
   for (auto &element : array)
   {
@@ -20,7 +19,6 @@ bool includes(const T &array, TYPE value)
       return true;
     }
   }
-
   return false;
 }
 
